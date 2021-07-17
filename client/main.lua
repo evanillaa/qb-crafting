@@ -70,6 +70,7 @@ Citizen.CreateThread(function()
 end)
 
 function GetThresholdItems()
+	ItemsToItemInfo()
 	local items = {}
 	for k, item in pairs(Config.CraftingItems) do
 		if QBCore.Functions.GetPlayerData().metadata["craftingrep"] >= Config.CraftingItems[k].threshold then
