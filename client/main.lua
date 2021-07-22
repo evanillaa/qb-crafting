@@ -27,6 +27,7 @@ Citizen.CreateThread(function()
 			if #(pos - objectPos) < 1.5 then
 				awayFromObject = false
 				DrawText3D(objectPos.x, objectPos.y, objectPos.z + 1.0, "~g~E~w~ - Craft")
+				--- add close inv when crafting
 				if IsControlJustReleased(0, 38) then
 					local crafting = {}
 					crafting.label = "Crafting"
